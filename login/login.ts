@@ -57,7 +57,6 @@ export class LoginPage {
         
         ) {
   	this.menu.swipeEnable(false);
-  	//this.checkLogin();
       // Create form builder validation rules
       this.form = fb.group({
          "username"  : ["", Validators.required],
