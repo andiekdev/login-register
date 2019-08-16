@@ -1,0 +1,36 @@
+page-home {
+	.content {
+    	background-color: #fff !important;
+	}
+
+	.header::after {
+	    background-image: none !important;
+	}
+
+	.card.menu {
+		border-radius: 8px;
+		background-color: #FFFFFF;
+		box-shadow: 4px 5px 17px -4px rgba(150,150,150,0.5);
+	}
+
+	.bg-main {
+		background-image: url(../assets/imgs/bg.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: bottom;
+		background-color: #986D12;
+		text-align: center;
+		color: #fff;
+		padding-top: 20px;
+	}
+
+	.bg-main img {
+		width: 100px;
+	}
+
+	.bg-main p {
+		margin-top: 0;
+		padding-bottom: 50px;
+	}
+
+}

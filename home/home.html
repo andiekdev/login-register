@@ -1,1 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" style="background: #986D12;"></ion-icon>
+    </button>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
 
+<ion-content>
+
+  <div class="bg-main no-padding" *ngFor="let item of items">
+      <img src="assets/imgs/blank.png">
+      <h2>FarmerTrack</h2>
+      <p>by FarmerTrack</p>
+      <label>Welcome {{item.username}}</label>
+  </div>
+  
+  <ion-row  *ngFor="let item of items" style="margin-bottom: 10px;padding:5px 13px;margin-top: 20px;">
+    <ion-col col-6 (click)="goSupplier({ recordUser: item })" style="text-align: center;" *ngIf="showMenuSupplier">
+      <ion-card style="margin: 0;width:100%;" class="menu" style="background: #C28E1E;">
+          <img style="width: 40px;height: 50px;margin: 15px auto 15px auto;" src="assets/imgs/blank.png"/>
+          <h5 style="font-weight: normal;font-size: 12px;padding-bottom: 10px;">SUPPLIER</h5>
+        </ion-card>
+    </ion-col>
+    
+    <ion-col col-6 (click)="goFarmer({ recordUser: item })" style="text-align: center;" *ngIf="showMenuFarmer">
+      <ion-card style="margin: 0;width:100%;" class="menu" style="background: #C28E1E;">
+          <img style="width: 40px;height: 50px;margin: 15px auto 15px auto;" src="assets/imgs/blank.png"/>
+          <h5 style="font-weight: normal;font-size: 12px;padding-bottom: 10px;">FARMER</h5>
+        </ion-card>
+    </ion-col>
+  </ion-row>
+    
+  <ion-row  *ngFor="let item of items" style="margin-bottom: 10px;padding:5px 13px;">
+    <ion-col col-4 (click)="goRegister({ recordUser: item.username })" style="text-align: center;"  *ngIf="showMenuCreateUser">
+      <ion-card style="margin: 0;width:100%;" class="menu" style="background: #C28E1E;">
+          <img style="width: 40px;height: 50px;margin: 15px auto 15px auto;" src="assets/imgs/blank.png"/>
+          <h5 style="font-weight: normal;font-size: 12px;padding-bottom: 10px;">CREATE USER</h5>
+        </ion-card>
+    </ion-col> 
+
+ 
+  
+</ion-content>
