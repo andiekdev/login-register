@@ -3,23 +3,7 @@ import { Content, NavController, MenuController, AlertController, LoadingControl
 import { AuthProvider } from '../../providers/auth/auth';
 import { ServiceProvider } from '../../providers/service/service';
 import { IonicPage,   ToastController } from 'ionic-angular';
-import { SupplierPage } from '../../pages/supplier/supplier';
-import { FarmerPage } from '../../pages/farmer/farmer';
 import { RegisterPage } from '../../pages/register/register';
-import { SupplierTransactionPage } from '../../pages/supplier-transaction/supplier-transaction';
-import { FarmerTransactionPage } from '../../pages/farmer-transaction/farmer-transaction';
-import { ReceivingPage } from '../../pages/receiving/receiving';
-import { BibitPage } from '../../pages/bibit/bibit';
-import { SupplierProductPage } from '../../pages/supplier-product/supplier-product';
-import { LahanPage } from '../../pages/lahan/lahan';
-import { PakanPage } from '../../pages/pakan/pakan';
-import { PakanPakaiPage } from '../../pages/pakanpakai/pakanpakai';
-import { ObatPage } from '../../pages/obat/obat';
-import { ObatPakaiPage } from '../../pages/obatpakai/obatpakai';
-import { BeratAyamPage } from '../../pages/beratayam/beratayam';
-import { AyamPunahPage } from '../../pages/ayampunah/ayampunah';
-import { SisaPakanPage } from '../../pages/sisapakan/sisapakan';
-import { SisaObatPage } from '../../pages/sisaobat/sisaobat';
 import { Http, Headers, RequestOptions } from '@angular/http';
 
 import 'rxjs/add/operator/map';
