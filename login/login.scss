@@ -1,0 +1,74 @@
+page-login {
+	.left-row {
+		background-image: url(../assets/imgs/background-menu.png);
+	  	background-repeat: no-repeat;
+	  	background-size: 100% auto;
+	  	background-position: bottom;
+	  	background-color: #006738;
+	  	height: 100vh;
+	  	text-align: center;
+	}
+
+	.left-row img {
+		margin-top: 35vh;
+		width: 100px;
+	}
+
+	.left-row h2 {
+		margin: 10px 0 0 0 !important;
+		color: #fff;
+	}
+
+	.left-row p {
+		margin: 0 !important;
+		color: #fff;
+	}
+
+	.grid {
+		padding: 0 !important;
+	}
+
+	.login-form {
+		margin-top: 30vh;
+		padding: 0 50px;
+	}
+
+	.label {
+		color: #252424;
+	}
+
+	.item-input .label {
+		font-size: 12px;
+		padding-bottom: 5px;
+	}
+
+	.item {
+		background: none !important;
+		padding-left: 0;
+	}
+
+	.item-inner {
+		opacity: 0.7;
+	}
+
+	.item .item-button {
+		padding: 20px 30px !important;
+	}
+
+	.list .item-block .item-inner {
+		border-bottom: 1px solid #252424;
+	}
+
+	.text-input {
+		color: #252424 !important;
+	}
+
+	.list[inset] {
+	    margin: 0 !important;
+	    border-radius: 2px;
+	}
+
+	.button-login {
+		margin-top: 40px;
+	}
+}

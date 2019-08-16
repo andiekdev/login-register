@@ -1,1 +1,47 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content>
+	<div class="login-form">
+            <ion-col style="text-align: center;">
+                <ion-row   justify-content-center align-items-center style="height: 100%; flex-direction: column;">
+                <img style="width: 150px;height: 150px;" src="assets/imgs/blank.png"/>
+                </ion-row>
+            </ion-col>
+       <form [formGroup]="form">
+        
+		 <ion-list inset>
+          <ion-item-group>
+			<ion-item>
+				<ion-label floating>Username</ion-label>
+				<ion-input id="username" name="username" formControlName="username" type="text" style="color:#C28E1E;" [(ngModel)]="dataUsername" #username></ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating>Password</ion-label>
+				<ion-input type="{{type}}" id="password" name="password" formControlName="password" style="color:#C28E1E;" [(ngModel)]="dataPassword" #password></ion-input>
+				<button ion-button clear item-end (click)="showPassword()" style="padding: 0 !important;position: absolute;right: 0;bottom: 0;">
+					<ion-icon *ngIf="!showPass" name="ios-eye-off-outline" style="color: #C28E1E;font-size: 22px;"></ion-icon>
+					<ion-icon *ngIf="showPass" name="ios-eye-outline" style="color: #C28E1E;font-size: 22px;"></ion-icon>
+				</button>
+			</ion-item>
+
+           </ion-item-group>
+			
+			<button ion-button full round class="button-login" (click)="login()" style="background: #C28E1E;">
+				LOGIN
+			</button>   
+                   
+		</ion-list>
+        </form>
+        	<button ion-button full round class="button-login" (click)="register()" style="background: #ABA9A5;">
+				REGISTER
+			</button>  
+	</div>
+    		
+</ion-content>
 
