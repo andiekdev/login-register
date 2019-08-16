@@ -34,10 +34,10 @@ export class HomePage {
   public username   : any;
   public userLevel  : any;
   public showMenuSupplier      : boolean = false;
-  public showMenuFarmer        : boolean = false;
+  public showMenuClient        : boolean = false;
   public showMenuCreateUser    : boolean = false;
   public showMenuSupTrans      : boolean = false;
-  public showMenuFarTrans      : boolean = false;
+  public showMenuCliTrans      : boolean = false;
   public recordID   : any;
   private baseURI   : string  = "http://localhost/FarmerTrackDev/";  
   
@@ -94,25 +94,25 @@ export class HomePage {
                 if(this.userLevel === "1")
                  {  
                     this.showMenuSupplier   = true;
-                    this.showMenuFarmer     = true;
+                    this.showMenuClient     = true;
                     this.showMenuCreateUser = true;
                     this.showMenuSupTrans   = true;
-                    this.showMenuFarTrans   = true;
+                    this.showMenuCliTrans   = true;
                     
                 }else if(this.userLevel === "2")
                  {
                     this.showMenuSupplier   = true;
-                    this.showMenuFarmer     = false;
+                    this.showMenuClient     = false;
                     this.showMenuCreateUser = false;
                     this.showMenuSupTrans   = true;
-                    this.showMenuFarTrans   = false;
+                    this.showMenuCliTrans   = false;
                     
                 }else{
                     this.showMenuSupplier   = false;
-                    this.showMenuFarmer     = true;
+                    this.showMenuClient     = true;
                     this.showMenuCreateUser = false;
                     this.showMenuSupTrans   = false;
-                    this.showMenuFarTrans   = true;
+                    this.showMenuCliTrans   = true;
                 }              
              
           });
@@ -146,68 +146,12 @@ export class HomePage {
     this.navCtrl.push(SupplierPage, recordUser);
   }
   
-  goFarmer(recordUser) {
-    this.navCtrl.push(FarmerPage, recordUser);
+  goClient(recordUser) {
+    this.navCtrl.push(ClientPage, recordUser);
   }
   
   goRegister(record) {
     this.navCtrl.push( RegisterPage, record);
   }  
   
-  goSupplierProduct() {
-    this.navCtrl.push(SupplierProductPage);
-  }
-
-  goSupTrans(recordUser){
-    this.navCtrl.push(SupplierTransactionPage, recordUser);
-  }  
-  
-  goFarTrans(recordUser){
-    this.navCtrl.push(FarmerTransactionPage, recordUser );
-  } 
-
-  goReceiving() {
-    this.navCtrl.push(ReceivingPage);
-  }
-
-  goBibit() {
-    this.navCtrl.push(BibitPage);
-  }
-
-  goLahan() {
-    this.navCtrl.push(LahanPage);
-  }
-
-  goPakan() {
-    this.navCtrl.push(PakanPage);
-  }  
-  
-  goPakanPakai() {
-    this.navCtrl.push(PakanPakaiPage);
-  }   
- 
-  goObat() {
-    this.navCtrl.push(ObatPage);
-  }  
-  
-  goObatPakai() {
-    this.navCtrl.push(ObatPakaiPage);
-  }  
- 
-  goBeratAyam() {
-    this.navCtrl.push(BeratAyamPage);
-  } 
-
-  goAyamPunah() {
-    this.navCtrl.push(AyamPunahPage);
-  }    
- 
-  goSisaPakan() {
-    this.navCtrl.push(SisaPakanPage);
-  } 
-  
-  goSisaObat() {
-    this.navCtrl.push(SisaObatPage);
-  } 
-
 }
